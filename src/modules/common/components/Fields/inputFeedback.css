@@ -1,0 +1,12 @@
+.input-error {
+    color    : red;
+    font-size: 12px;
+}
+
+label {
+    font-size: 15px;
+}
+
+.form-control {
+    padding: 7px 16px;
+}

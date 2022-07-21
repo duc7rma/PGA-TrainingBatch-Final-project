@@ -1,0 +1,136 @@
+.table-container {
+    width     : 100%;
+    overflow-x: auto;
+
+    .table-list {
+        min-width: 2000px;
+
+        thead {
+            font-size       : 15px;
+            background-color: #323259;
+
+            tr {
+
+                line-height: 20.5px;
+
+                th {
+                    padding: 16px 18px;
+                }
+
+                .checkbox {
+                    width  : 2.5%;
+                    padding: 16px 18px 16px 15px;
+                }
+
+                .email {
+                    width: 10%;
+                }
+
+                .name {
+                    width: 10%;
+                }
+
+                .accessLevel {
+                    width: 7%;
+
+                }
+
+                .product {
+                    width: 5%;
+                }
+
+                .orders {
+                    width: 5%;
+                }
+
+                .wishList {
+                    width: 5%;
+                }
+
+                .created {
+                    width: 9%;
+                }
+
+                .lastLogin {
+                    width: 9%;
+                }
+
+                .delete {
+                    width: 4%;
+                }
+            }
+
+        }
+
+        tbody {
+            font-size       : 14px;
+            background-color: #323259;
+            box-shadow      : 0 0.5rem 1rem 0 #1a1f33;
+
+            tr {
+                td {
+                    // display: inline-block;
+
+                    border-top: 1px solid #1b1b38;
+                    padding   : 10px 17px;
+
+                    div {
+                        display: inline-block;
+
+                        span {
+                            display: inline-block;
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                .checkbox {
+                    padding: 10px 17px;
+                }
+
+                td.email {
+
+                    .email-name {
+                        list-style: none;
+
+                        .email-user {
+                            a {
+                                color: #007BFF;
+                            }
+
+                            p {
+                                line-height  : 20px;
+                                margin-bottom: 0;
+                            }
+                        }
+
+                        .name-user {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                .delete {
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: center;
+                    margin-bottom  : 0;
+
+                    button {
+                        background-color: #B18AFF;
+                        border          : none;
+                        display         : flex;
+                        align-items     : center;
+                        justify-content : center;
+                        margin-bottom   : 0;
+                        padding         : 10px;
+                        border-radius   : 4px;
+                    }
+                }
+            }
+        }
+    }
+}

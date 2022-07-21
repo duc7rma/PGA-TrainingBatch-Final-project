@@ -1,0 +1,39 @@
+ul.pagination {
+    padding      : 20px;
+    margin-bottom: 0;
+
+    li {
+        font-size: 15px;
+    }
+}
+
+li:hover {
+    color: #323259;
+}
+
+.pagination-container {
+    display  : flex;
+    font-size: 15px;
+
+    .pagination {
+        display        : flex;
+        justify-content: center;
+        align-items    : center;
+
+        p {
+            margin       : 0;
+            padding-right: 3px;
+        }
+
+        select {
+            background-color: #B18AFF;
+            margin-right    : 3px;
+            padding         : 3px 10px;
+        }
+
+        .total-items {
+            font-weight  : 800;
+            padding-right: 3px;
+        }
+    }
+}

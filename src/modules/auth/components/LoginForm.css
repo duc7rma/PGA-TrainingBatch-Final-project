@@ -1,0 +1,21 @@
+.form-login {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    max-width      : 380px;
+    width          : 100%;
+    margin         : auto
+}
+
+div.loading {
+    width : 100vw;
+    height: 123vh;
+
+    position        : absolute;
+    background-color: aquamarine;
+    opacity         : 0.5;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+}

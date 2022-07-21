@@ -1,0 +1,21 @@
+{
+  "welcome": "Xin chào",
+  "firstName": "First Name *",
+  "lastName": "Last Name *",
+  "email": "Email*",
+  "password": "Password *",
+  "confirm_password": "Confirm password *",
+  "typePayment": "Type PaymentRails ID",
+  "accessLevel": "Access Level *",
+  "roles": "Roles",
+  "membership": "Membership ",
+
+  
+  "emailRequire": "Vui lòng nhập địa chỉ email",
+  "emailInvalid": "Địa chỉ email không hợp lệ",
+  "passwordRequire": "Vui lòng nhập mật khẩu",
+  "minPasswordInvalid": "Mật khẩu tối thiểu 4 ký tự",
+  "createUser": "Create account",
+  "removeUser": "Remove Selected"
+
+}

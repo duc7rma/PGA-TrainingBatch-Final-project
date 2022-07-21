@@ -1,0 +1,10 @@
+.input-error {
+    color    : red;
+    font-size: 16px;
+}
+
+.form-control {
+    width  : 380px;
+    height : 40px;
+    padding: 7px 16px;
+}

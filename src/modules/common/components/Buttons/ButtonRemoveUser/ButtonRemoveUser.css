@@ -1,0 +1,31 @@
+.btn-create-user {
+    min-width       : 150px;
+    border-radius   : 6px;
+    background-color: #f0ad4e;
+    border-color    : #eea236;
+
+    font-size: 16px;
+    padding  : 6px 12px;
+    color    : brown;
+}
+
+.btn-create-user:hover {
+    background-color: #F0AD4E;
+    color           : gray
+}
+
+.box-create-user {
+    display           : flex;
+    align-items       : center;
+    /* justify-content: center; */
+    /* background     : #323259; */
+    padding           : 15px 36px;
+    border            : 1px solid #1b1b38;
+    border-width      : 0 0 1px 1px;
+    box-shadow        : 0 0 13px 0 #b18aff;
+    z-index           : 2;
+}
+
+.wrapper {
+    padding: 0;
+}

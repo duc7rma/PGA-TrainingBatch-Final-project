@@ -1,0 +1,181 @@
+h2 {
+    height       : '40px';
+    margin-bottom: '16px'
+}
+
+li {
+    list-style: none;
+}
+
+.filters-user {
+    .body-filters {
+        border          : 1px solid #13132b;
+        background-color: #323259;
+        margin-bottom   : 40px;
+        padding         : 20px 20px 0;
+
+
+        ul {
+            padding: 0;
+        }
+
+        .btn-down {
+            display              : flex;
+            align-items          : center;
+            justify-content      : center;
+            // margin-left       : 150px;
+
+            button {
+                margin          : 0;
+                padding         : 0;
+                width           : 25px;
+                height          : 25px;
+                background-color: #323259;
+                border-style    : none;
+            }
+        }
+
+        .list-filters {
+            font-size    : 15px;
+            display      : flex;
+            list-style   : none;
+            margin-bottom: 0px;
+            border-bottom: 2px solid #1b1b38;
+
+            li {
+                min-width   : 21%;
+                margin-right: 20px;
+
+                button.btn-search {
+                    background-color: #B18AFF;
+                    font-size       : 15px;
+                    color           : white;
+                    width           : 90px;
+                    height          : 36.5px;
+                    border-radius   : 5px;
+                    margin-bottom   : 24px;
+                }
+
+                div.filter {
+                    background-color: #252547;
+                    color           : #fff;
+                    border-radius   : 5px;
+
+                    div.select-placeholder-text {
+                        color: white;
+                    }
+
+                    div.css-b62m3t-container {
+                        background-color: #252547;
+
+                        div.css-1s2u09g-control {
+                            background-color: #252547;
+                            border-style    : hidden;
+
+                            .css-12jo7m5 {
+                                color: white;
+                            }
+                        }
+
+                        // div.css-2613py-menu {
+                        //     background-color: yellow;
+                        //     color           : black;
+                        // }
+                    }
+
+                    input {
+                        background-color: #252547;
+                        color           : white;
+                        padding         : 7px 16px;
+                        width           : 100%;
+                        border-style    : hidden;
+                        border-radius   : 5px;
+                        font-size       : 15px;
+                    }
+
+                    select {
+                        background-color: #252547;
+                        color           : white;
+                        padding         : 7px 16px;
+                        width           : 100%;
+                        border-style    : none;
+                        border-radius   : 5px;
+                    }
+                }
+            }
+
+        }
+
+        .filter-bonus {
+            display   : flex;
+            margin-top: 20px;
+
+            label {
+                font-size: 13px;
+                padding  : 5px 15px 0px 5px;
+                min-width: 126px;
+                height   : 35px;
+                color    : white;
+
+            }
+
+            .information {
+                padding     : 0px 15px;
+                margin-right: 40px;
+
+                .list-info {
+                    li {
+                        display      : flex;
+                        margin-bottom: 16px;
+
+                        div {
+
+                            input,
+                            select {
+                                background-color: #252547;
+                                font-size       : 15px;
+                                color           : white;
+                                padding         : 7px 35.2px 7px 18px;
+                                width           : 100%;
+                                border-style    : none;
+                                border-radius   : 5px;
+                                min-width       : 20vw;
+                                border          : 1px solid #13132b;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .user-activity {
+                display: flex;
+
+                div {
+                    ul {
+                        display: flex;
+
+                        li {
+                            display       : flex;
+                            flex-direction: row;
+
+                            label {
+                                font-size: 15px;
+                            }
+                        }
+                    }
+
+                    .date-range {
+                        background-color: #252547;
+                        font-size       : 15px;
+                        color           : white;
+                        padding         : 7px 35.2px 7px 18px;
+                        width           : 100%;
+                        border-style    : none;
+                        border-radius   : 5px;
+                        min-width       : 40%;
+                    }
+                }
+            }
+        }
+    }
+}

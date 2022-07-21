@@ -1,0 +1,2 @@
+export const RESPONSE_STATUS_SUCCESS = true
+export const RESPONSE_STATUS_UNAUTHORIZED = 401;
