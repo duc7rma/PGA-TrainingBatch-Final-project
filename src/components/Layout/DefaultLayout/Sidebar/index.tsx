@@ -1,5 +1,6 @@
 import { faAngleDown, faAngleLeft, faTag, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ROUTES } from 'configs/routes';
 import React, { useState } from 'react';
 import './Sidebar.scss';
 
@@ -38,7 +39,7 @@ function Sidebar() {
           {isShowUser && (
             <ul style={{ color: 'white', fontSize: '15px' }}>
               <li>
-                <a href="">User List</a>
+                <a href={ROUTES.userManager}>User List</a>
               </li>
             </ul>
           )}

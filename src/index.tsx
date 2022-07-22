@@ -16,7 +16,7 @@ smoothscroll.polyfill();
 
 const { store, persistor } = configureStore({});
 
-store.dispatch(setLocale('vi'));
+store.dispatch(setLocale('en'));
 
 ReactDOM.render(
   <React.StrictMode>

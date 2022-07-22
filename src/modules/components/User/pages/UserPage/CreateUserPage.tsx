@@ -14,6 +14,7 @@ import { RESPONSE_STATUS_SUCCESS } from 'utils/httpResponseCode';
 import CreateUserForm from './../../components/CreateUserForm/CreateUserForm';
 import { API_PATHS } from './../../../../../configs/api';
 import { replace } from 'connected-react-router';
+import { DefaultLayout } from 'components/Layout';
 
 function CreateUserPage() {
   const dispatch = useDispatch<ThunkDispatch<AppState, null, Action<string>>>();
@@ -46,16 +47,18 @@ function CreateUserPage() {
   };
 
   return (
-    <div className="content-body">
-      <div>
-        <button style={{ backgroundColor: '#1b1b38', borderStyle: 'none' }} onClick={() => handleBackToManagerUser()}>
-          <FontAwesomeIcon style={{ width: '32px', height: '32px', color: 'white' }} icon={faCircleArrowLeft} />
-        </button>
-        <h4>Create profile</h4>
-      </div>
+    <DefaultLayout>
+      <div className="content-body">
+        <div>
+          <button style={{ backgroundColor: '#1b1b38', borderStyle: 'none' }} onClick={() => handleBackToManagerUser()}>
+            <FontAwesomeIcon style={{ width: '32px', height: '32px', color: 'white' }} icon={faCircleArrowLeft} />
+          </button>
+          <h4>Create profile</h4>
+        </div>
 
-      <CreateUserForm onSubmit={onSubmit} isLoading={isLoading} errorMessage={errorMessage} />
-    </div>
+        <CreateUserForm onSubmit={onSubmit} isLoading={isLoading} errorMessage={errorMessage} />
+      </div>
+    </DefaultLayout>
   );
 }
 

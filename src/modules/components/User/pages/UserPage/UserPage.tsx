@@ -15,6 +15,7 @@ import { fetchThunk } from 'modules/common/redux/thunk';
 import { API_PATHS } from 'configs/api';
 import { clearUserIds } from '../../redux/userReducer';
 import { userRemove } from 'models/user';
+import { DefaultLayout } from 'components/Layout';
 
 function UserPage() {
   const dispatch = useDispatch<ThunkDispatch<AppState, null, Action<string>>>();
@@ -67,43 +68,50 @@ function UserPage() {
   };
 
   return (
-    <div className="content-body">
-      <FiltersUser />
-      <button className="add-user" onClick={() => handleAddUser()}>
-        Add User
-      </button>
+    <DefaultLayout>
+      <div className="content-body">
+        <FiltersUser />
+        <button className="add-user" onClick={() => handleAddUser()}>
+          Add User
+        </button>
 
-      {isConfirmRemove && (
-        <div className="confirm-delete" id="confirm-delete">
-          <div className="title">Confirm Delete</div>
-          <div className="confirm">Do you want to delete this user?</div>
-          <div className="yes-no">
-            <button className="btn-yes" onClick={() => handleClickYes()}>
-              <div className="yes">YES</div>
-            </button>
+        {isConfirmRemove && (
+          <div className="confirm-delete" id="confirm-delete">
+            <div className="title">Confirm Delete</div>
+            <div className="confirm">Do you want to delete this user?</div>
+            <div className="yes-no">
+              <button className="btn-yes" onClick={() => handleClickYes()}>
+                <div className="yes">YES</div>
+              </button>
 
-            <button className="btn-no" onClick={() => handleClickNo()}>
-              <div className="no">NO</div>
-            </button>
+              <button className="btn-no" onClick={() => handleClickNo()}>
+                <div className="no">NO</div>
+              </button>
+            </div>
           </div>
-        </div>
-      )}
+        )}
 
-      <PaginatedItems />
+        <PaginatedItems />
 
-      {/* <ButtonRemoveUser /> */}
-      <div className="box-create-user">
-        <div className="wrapper">
-          <div className="col-md-auto" id="btn-create-user">
-            <button className="btn-create-user" type="submit" disabled={isDisable} onClick={() => handleClickRemove()}>
-              <span>
-                <FormattedMessage id="removeUser" />
-              </span>
-            </button>
+        {/* <ButtonRemoveUser /> */}
+        <div className="box-create-user">
+          <div className="wrapper">
+            <div className="col-md-auto" id="btn-create-user">
+              <button
+                className="btn-create-user"
+                type="submit"
+                disabled={isDisable}
+                onClick={() => handleClickRemove()}
+              >
+                <span>
+                  <FormattedMessage id="removeUser" />
+                </span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </DefaultLayout>
   );
 }
 

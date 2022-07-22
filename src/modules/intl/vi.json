@@ -1,5 +1,4 @@
 {
-  "welcome": "Xin chào",
   "firstName": "First Name *",
   "lastName": "Last Name *",
   "email": "Email*",
@@ -9,8 +8,9 @@
   "accessLevel": "Access Level *",
   "roles": "Roles",
   "membership": "Membership ",
-
   
+  
+  "welcome": "Xin chào",
   "emailRequire": "Vui lòng nhập địa chỉ email",
   "emailInvalid": "Địa chỉ email không hợp lệ",
   "passwordRequire": "Vui lòng nhập mật khẩu",
